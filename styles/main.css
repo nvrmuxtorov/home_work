@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+.allpadge {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 60, 60);
+}
+.allpadge .wrapper {
+  width: 350px;
+  height: 350px;
+  background: url(../images/spiderman-red-burning-4k_1560535383.jpg.webp);
+  background-position: 100% 50%;
+  padding: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  position: relative;
+}
+.allpadge .wrapper .hero {
+  display: flex;
+  gap: 35px;
+}
+.allpadge .wrapper .hero .profile_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(../images/Screenshot\ 2023-11-22\ 171725.png);
+  background-position: center;
+  border: 8px solid rgb(255, 255, 255);
+}
+.allpadge .wrapper .hero .social {
+  margin-top: 40px;
+  display: none;
+}
+.allpadge .wrapper .hero .social ul {
+    position: absolute;
+    transition: all 2s linear 2s;
+    transition-delay: 2s;
+}
+.allpadge .wrapper .hero .social ul:nth-child(1){
+    transition: all 2s linear 2s;
+}
+.allpadge .wrapper .hero .social ul .was{
+    transition: all .2s linear 3s;
+    background-color: aliceblue;
+}
+.allpadge .wrapper .hero .social ul:nth-child(2){
+    transition: all .2s linear 2.5s;
+    background-color: black;
+}
+.allpadge .wrapper .hero .social ul li {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.allpadge .wrapper .hero .social ul li i {
+  font-size: 30px;
+  color: rgb(0, 195, 255);
+  transition-delay: 3s;
+}
+.allpadge .wrapper .hero .social ul li .bxs-leaf {
+  color: greenyellow;
+}
+.allpadge .wrapper .hero .social ul li .bx-cube {
+  color: black;
+}
+.allpadge .wrapper h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+  display: none;
+}
+.allpadge .wrapper h2::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 1px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+.allpadge .wrapper strong {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.allpadge .wrapper span {
+  display: block;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(203, 203, 203);
+  margin-bottom: 20px;
+  display: none;
+}
+
+.allpadge .wrapper p {
+  color: rgb(203, 203, 203);
+  margin-left: 40px;
+  margin-right: 20px;
+  display: none;
+}
+.wrapper:hover {
+  width: 500px;
+  height: 650px;
+  background: url(../images/spiderman-red-burning-4k_1560535383.jpg.webp);
+  background-position: 100% 50%;
+  padding: 35px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+.wrapper:hover .hero .social{
+    display: block;
+}
+.wrapper:hover .social ul{
+    left: 35px;
+    transition: all 2s linear 2s;
+    transition-delay: 2s;
+}
+.wrapper:hover h2 {
+  display: block;
+}
+
+.wrapper:hover strong {
+  display: block;
+}
+.wrapper:hover span {
+  display: block;
+}
+
+.wrapper:hover p {
+  display: block;
+}
